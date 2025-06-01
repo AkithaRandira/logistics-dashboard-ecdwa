@@ -1,0 +1,152 @@
+body {
+  background: linear-gradient(to right, #e0ecff, #f4f8ff);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.header button {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.header button:hover {
+  background: #c0392b;
+}
+
+.upload-box,
+.history-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: #f8faff;
+  border-radius: 12px;
+  border: 1px solid #dde7f0;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.03);
+}
+
+.upload-box h2,
+.history-box h3 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.upload-box h2::before {
+  content: "📤";
+  margin-right: 10px;
+}
+
+.history-box h3::before {
+  content: "📁";
+  margin-right: 10px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.upload-box button {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.upload-box button:hover {
+  background: #2563eb;
+}
+
+.success {
+  margin-top: 10px;
+  color: #1abc9c;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.empty {
+  color: #8898aa;
+  font-style: italic;
+}
+
+.history-box ul {
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.upload-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e9f1;
+}
+
+.upload-item .file-icon {
+  font-size: 18px;
+}
+
+.upload-item .filename {
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.upload-item .filename:hover {
+  text-decoration: underline;
+}
+
+.upload-item .timestamp {
+  font-size: 13px;
+  font-style: italic;
+  color: #666;
+}
+
+.upload-item .filesize {
+  font-size: 13px;
+  color: #888;
+}
+
+.count {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 6px;
+  color: #374151;
+}
